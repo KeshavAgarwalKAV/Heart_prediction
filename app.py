@@ -166,7 +166,7 @@ ResultProb1=round(ResultProb[0][1] * 100, 2)
 # Calculate the probability of getting heart disease
 if st.button('PREDICT'):
     # If predicted probability is greater than or equal to 0.5, classify as "Yes"
-    if ResultProb[0][1] >= 0.5:
+    if ResultProb[0][1] >= 0.3:
         st.write('Prediction: **Yes**, you may have heart disease.')
     else:
         st.write('Prediction: **No**, you are less likely to have heart disease.')
